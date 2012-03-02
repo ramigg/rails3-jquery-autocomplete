@@ -83,7 +83,7 @@ module Rails3JQueryAutocomplete
     # Hash also includes a key/value pair for each method in extra_data
     #
     def json_for_autocomplete(items, method, extra_data=[])
-      items.collect do |item|
+      items.uniq.collect do |item|
         hash = {"id" => item.id.to_s, "label" => item.send(method), "value" => item.send(method)}
         extra_data.each do |datum|
           hash[datum] = item.send(datum)
