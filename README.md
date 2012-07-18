@@ -1,3 +1,9 @@
+Now if you need to search more than one field in the same field, you can by passing the :columns_names this way:
+
+  autocomplete :company, :name, :columns_names=>[:name, :phone]
+
+Now works with mongoid.
+
 # rails3-jquery-autocomplete
 
 [![Build Status](https://secure.travis-ci.org/crowdint/rails3-jquery-autocomplete.png)](http://travis-ci.org/crowdint/rails3-jquery-autocomplete)
@@ -364,4 +370,3 @@ Everyone on [this list](https://github.com/crowdint/rails3-jquery-autocomplete/c
 [Crowd Interactive](http://www.crowdint.com) is an American web design and development company that happens to work in Colima, Mexico.
 We specialize in building and growing online retail stores. We don’t work with everyone – just companies we believe in. Call us today to see if there’s a fit.
 Find more info [here](http://www.crowdint.com)!
-
